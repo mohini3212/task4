@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --button-color1: #ED1D78;
+  --para1: #4a5355;
+  --primary-font: "Poppins", sans-serif;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: var(--primary-font);
+}
+
+
+.margin-top {
+  margin-top: 5rem;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  text-align: justify;
+  color: var(--heading2);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+h2 {
+
+  font-size: 4rem;
+
+  font-weight: 700;
+}
+
+p {
+  color: var(--para1);
+  font-size: 1.4rem;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+ul li {
+  list-style: none;
+
+}
+
+a {
+  border: none;
+  color: var(--button-color1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.shadow-custom {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  /* position: fixed;      
+  top: 0;               
+  left: 0; */
+  width: 100%;
+  z-index: 1000;
+
+
+}
+
+.grid {
+  display: grid;
+  gap: 5rem;
+}
+
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 3rem;
+}
+
+
+/* button */
+.btn1 {
+
+  background-image: linear-gradient(to right, #7F1D84, #ED1D78);
+  color: #fff;
+  padding: 1.2rem 2.8rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: 600;
+
+}
+
+.btn1:hover {
+  background-color: #1E40AF;
+}
+
+
+.btn2 {
+  background-color: transparent;
+  color: #F97316;
+  border: 2px solid #F97316;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+
+}
+
+.btn2:hover {
+  background-color: #F97316;
+  color: white;
+}
+
+/* navbar */
+
+
+.nav-link {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  margin: 0;
+  margin-right: 3rem;
+  cursor: pointer;
+  color: #2E3947;
+  font-weight: 400;
+}
+
+.navbar-brand img {
+  width: 10rem;
+}
+
+.nav-item {
+  width: 100%;
+  height: 10vh;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+
+  & .nav-link {
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    color: var(--button-color1);
+
+  }
+}
+
+
+
+
+/**** HERO SECTION START ****/
+.hero-section-content {
+  place-content: center;
+  width: 100%;
+}
+
+.hero-section {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  position: relative;
+  place-content: center;
+  background-image: linear-gradient(to right, #bfe0f5, #F3FAFF);
+  height: 84vh;
+
+  & img {
+    width: 50rem;
+    border-radius: 1rem;
+  }
+}
+
+.hero-section .grid {
+  gap: 6.2rem;
+}
+
+.hero-section h6 {
+
+  color: var(--button-color1);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section h2 {
+  font-size: 4rem;
+  font-weight: 700;
+
+  & span {
+    color: var(--button-color1);
+  }
+
+}
+
+.hero-section p {
+  color: var(--para1);
+  margin: 1rem 0rem;
+  font-weight: 400;
+
+  & span {
+    font-weight: 600;
+  }
+}
+
+/**** HERO SECTION END ****/
+
+/*media query  */
+
+@media (width <=1220px) {
+  .hero-section h2 {
+
+    font-size: 3.5rem;
+
+  }
+
+  .hero-section-img img {
+    width: 90%;
+  }
+}
+
+@media (width <=998px) {
+  .hero-section-content {
+    place-content: center;
+
+    width: 100%;
+    margin: auto;
+  }
+
+  .hero-section {
+    place-content: center;
+    height: auto;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+    place-content: center;
+    place-items: center;
+
+    margin: 7rem 0rem;
+  }
+
+
+
+
+}
+
+@media (width <=768px) {
+  .container {
+    width: 96%;
+    margin: auto;
+  }
+
+  .navbar {
+    height: 100%;
+  }
+
+  .hero-section-img img {
+    width: 100%;
+    place-content: center;
+    place-items: center;
+    object-position: center;
+    margin: 0 auto;
+    display: block;
+  }
+
+
+
+  .grid-two--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section-content {
+    order: 2;
+  }
+
+  .hero-section h2 {
+    font-size: 3rem;
+
+  }
+
+}
+
+@media (width <=470px) {
+
+  .container {
+    width: 92%;
+    margin: auto;
+  }
+
+}
