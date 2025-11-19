@@ -41,17 +41,9 @@ h6 {
   color: var(--heading2);
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 800;
-}
 
-h2 {
 
-  font-size: 4rem;
 
-  font-weight: 700;
-}
 
 p {
   color: var(--para1);
@@ -102,15 +94,15 @@ a {
 
   background-image: linear-gradient(to right, #7F1D84, #ED1D78);
   color: #fff;
-  padding: 1.2rem 2.8rem;
+  padding: 1rem 2.8rem;
   border-radius: 0.6rem;
   border: none;
   font-weight: 600;
-
+  font-size: 1.3rem;
 }
 
 .btn1:hover {
-  background-color: #1E40AF;
+  background-image: linear-gradient(to right, #6d1171, #e84b8f);
 }
 
 
@@ -118,9 +110,11 @@ a {
   background-color: transparent;
   color: #F97316;
   border: 2px solid #F97316;
-  padding: 12px 28px;
-  border-radius: 6px;
+  padding: 1rem 2.8rem;
+  border-radius: 0.6rem;
+
   font-weight: 600;
+  font-size: 1.3rem;
 
 }
 
@@ -198,7 +192,7 @@ a {
 }
 
 .hero-section h2 {
-  font-size: 4rem;
+  font-size: 4.8rem;
   font-weight: 700;
 
   & span {
@@ -224,7 +218,7 @@ a {
 @media (width <=1220px) {
   .hero-section h2 {
 
-    font-size: 3.5rem;
+    font-size: 3.9rem;
 
   }
 
@@ -239,6 +233,11 @@ a {
 
     width: 100%;
     margin: auto;
+  }
+
+  .hero-section h2 {
+    font-size: 4.2rem;
+
   }
 
   .hero-section {
